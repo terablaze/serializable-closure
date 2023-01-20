@@ -1,8 +1,8 @@
 <?php
 
-use Laravel\SerializableClosure\SerializableClosure;
-use Laravel\SerializableClosure\Serializers;
-use Laravel\SerializableClosure\Support\ReflectionClosure;
+use Terablaze\SerializableClosure\SerializableClosure;
+use Terablaze\SerializableClosure\Serializers;
+use Terablaze\SerializableClosure\Support\ReflectionClosure;
 
 /*
 |--------------------------------------------------------------------------

@@ -1,17 +1,17 @@
 <?php
 
-namespace Laravel\SerializableClosure\Serializers;
+namespace Terablaze\SerializableClosure\Serializers;
 
-use Laravel\SerializableClosure\Contracts\Serializable;
-use Laravel\SerializableClosure\Exceptions\InvalidSignatureException;
-use Laravel\SerializableClosure\Exceptions\MissingSecretKeyException;
+use Terablaze\SerializableClosure\Contracts\Serializable;
+use Terablaze\SerializableClosure\Exceptions\InvalidSignatureException;
+use Terablaze\SerializableClosure\Exceptions\MissingSecretKeyException;
 
 class Signed implements Serializable
 {
     /**
      * The signer that will sign and verify the closure's signature.
      *
-     * @var \Laravel\SerializableClosure\Contracts\Signer|null
+     * @var \Terablaze\SerializableClosure\Contracts\Signer|null
      */
     public static $signer;
 
@@ -75,7 +75,7 @@ class Signed implements Serializable
      * @param  array  $signature
      * @return void
      *
-     * @throws \Laravel\SerializableClosure\Exceptions\InvalidSignatureException
+     * @throws \Terablaze\SerializableClosure\Exceptions\InvalidSignatureException
      */
     public function __unserialize($signature)
     {
@@ -83,7 +83,7 @@ class Signed implements Serializable
             throw new InvalidSignatureException();
         }
 
-        /** @var \Laravel\SerializableClosure\Contracts\Serializable $serializable */
+        /** @var \Terablaze\SerializableClosure\Contracts\Serializable $serializable */
         $serializable = unserialize($signature['serializable']);
 
         $this->closure = $serializable->getClosure();

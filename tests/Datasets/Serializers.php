@@ -1,6 +1,6 @@
 <?php
 
-use Laravel\SerializableClosure\Serializers;
+use Terablaze\SerializableClosure\Serializers;
 
 dataset('serializers', function () {
     foreach ([Serializers\Native::class, Serializers\Signed::class] as $serializer) {

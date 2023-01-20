@@ -8,7 +8,7 @@ use function Foo\f1;
 // Dirty CS
 define(Bar::class, Bar::class);
 
-use Laravel\SerializableClosure\Support\ReflectionClosure;
+use Terablaze\SerializableClosure\Support\ReflectionClosure;
 
 test('resolve arguments', function () {
     $f1 = function (Bar $p) {

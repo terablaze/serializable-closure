@@ -1,7 +1,7 @@
 <?php
 
-use Laravel\SerializableClosure\Exceptions\InvalidSignatureException;
-use Laravel\SerializableClosure\SerializableClosure;
+use Terablaze\SerializableClosure\Exceptions\InvalidSignatureException;
+use Terablaze\SerializableClosure\SerializableClosure;
 
 test('secure closure integrity fail', function () {
     $closure = function () {

@@ -1,19 +1,19 @@
 <?php
 
-namespace Laravel\SerializableClosure;
+namespace Terablaze\SerializableClosure;
 
 use Closure;
-use Laravel\SerializableClosure\Exceptions\InvalidSignatureException;
-use Laravel\SerializableClosure\Exceptions\PhpVersionNotSupportedException;
-use Laravel\SerializableClosure\Serializers\Signed;
-use Laravel\SerializableClosure\Signers\Hmac;
+use Terablaze\SerializableClosure\Exceptions\InvalidSignatureException;
+use Terablaze\SerializableClosure\Exceptions\PhpVersionNotSupportedException;
+use Terablaze\SerializableClosure\Serializers\Signed;
+use Terablaze\SerializableClosure\Signers\Hmac;
 
 class SerializableClosure
 {
     /**
      * The closure's serializable.
      *
-     * @var \Laravel\SerializableClosure\Contracts\Serializable
+     * @var \Terablaze\SerializableClosure\Contracts\Serializable
      */
     protected $serializable;
 
@@ -115,7 +115,7 @@ class SerializableClosure
      * @param  array  $data
      * @return void
      *
-     * @throws \Laravel\SerializableClosure\Exceptions\InvalidSignatureException
+     * @throws \Terablaze\SerializableClosure\Exceptions\InvalidSignatureException
      */
     public function __unserialize($data)
     {

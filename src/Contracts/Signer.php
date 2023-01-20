@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\SerializableClosure\Contracts;
+namespace Terablaze\SerializableClosure\Contracts;
 
 interface Signer
 {

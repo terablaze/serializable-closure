@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\SerializableClosure\Signers;
+namespace Terablaze\SerializableClosure\Signers;
 
-use Laravel\SerializableClosure\Contracts\Signer;
+use Terablaze\SerializableClosure\Contracts\Signer;
 
 class Hmac implements Signer
 {

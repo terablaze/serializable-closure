@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\SerializableClosure\Exceptions;
+namespace Terablaze\SerializableClosure\Exceptions;
 
 use Exception;
 

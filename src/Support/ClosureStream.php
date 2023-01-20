@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\SerializableClosure\Support;
+namespace Terablaze\SerializableClosure\Support;
 
 #[\AllowDynamicProperties]
 class ClosureStream
@@ -8,7 +8,7 @@ class ClosureStream
     /**
      * The stream protocol.
      */
-    const STREAM_PROTO = 'laravel-serializable-closure';
+    const STREAM_PROTO = 'terablaze-serializable-closure';
 
     /**
      * Checks if this stream is registered.

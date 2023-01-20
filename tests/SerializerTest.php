@@ -2,9 +2,9 @@
 
 use Carbon\Carbon;
 use Carbon\CarbonImmutable;
-use Laravel\SerializableClosure\SerializableClosure;
-use Laravel\SerializableClosure\Serializers\Signed;
-use Laravel\SerializableClosure\Support\ReflectionClosure;
+use Terablaze\SerializableClosure\SerializableClosure;
+use Terablaze\SerializableClosure\Serializers\Signed;
+use Terablaze\SerializableClosure\Support\ReflectionClosure;
 use Tests\Fixtures\Model;
 
 test('closure use return value', function () {
@@ -342,7 +342,7 @@ test('serialization string content dont change', function () {
     $actual = explode('s:32:', serialize($c))[0];
 
     expect($actual)->toBe(<<<OEF
-O:47:"Laravel\SerializableClosure\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\SerializableClosure\Serializers\Signed":2:{s:12:"serializable";s:264:"O:46:"Laravel\SerializableClosure\Serializers\Native":5:{s:3:"use";a:1:{s:1:"a";i:100;}s:8:"function";s:47:"function () use (\$a) {
+O:47:"Terablaze\SerializableClosure\SerializableClosure":1:{s:12:"serializable";O:46:"Terablaze\SerializableClosure\Serializers\Signed":2:{s:12:"serializable";s:264:"O:46:"Terablaze\SerializableClosure\Serializers\Native":5:{s:3:"use";a:1:{s:1:"a";i:100;}s:8:"function";s:47:"function () use (\$a) {
         return \$a;
     }";s:5:"scope";s:22:"P\Tests\SerializerTest";s:4:"this";N;s:4:"self";
 OEF

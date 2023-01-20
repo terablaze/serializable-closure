@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\SerializableClosure\Support;
+namespace Terablaze\SerializableClosure\Support;
 
 class SelfReference
 {
